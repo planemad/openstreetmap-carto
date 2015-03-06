@@ -224,3 +224,11 @@ node,way    3dshapes:ggmodelk       text    delete
 node,way    AND_nosr_r              text    delete
 node,way    import                  text    delete
 node,way    it:fvg:*                text    delete
+
+
+## Custom tags for openstreetmap-india (IN) ##
+# Language tags
+node,way   name:kn         text         linear
+node,way   electrified   text         linear
+node,way   motorroad   text         linear
+node,way   protect_class   text         linear

@@ -1,5 +1,38 @@
 {
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    0,
+    0,
+    4
+  ],
+  "format": "png",
   "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "shapefiles.mss",
+    "landcover.mss",
+    "water.mss",
+    "water-features.mss",
+    "roads.mss",
+    "power.mss",
+    "citywalls.mss",
+    "placenames.mss",
+    "buildings.mss",
+    "stations.mss",
+    "amenity-points.mss",
+    "ferry-routes.mss",
+    "aerialways.mss",
+    "admin.mss",
+    "addressing.mss"
+  ],
   "Layer": [
     {
       "name": "world",
@@ -1992,72 +2025,36 @@
         "minzoom": 14
       },
       "advanced": {}
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        72.51277096649953,
+        27.717572966869284,
+        97.34594798069979,
+        37.084106989378974
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "planet_osm_line",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "8072084.74,3213412.64,10836501.36,4450836.71",
+        "host": "localhost",
+        "port": "5432",
+        "dbname": "india_boundaries"
+      },
+      "id": "india-claimed-boundaries",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "india-claimed-boundaries"
     }
   ],
   "scale": 1,
-  "center": [
-    0,
-    0,
-    4
-  ],
-  "format": "png",
-  "_parts": {
-    "extents": {
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "extent": [
-        -180,
-        -85.05112877980659,
-        180,
-        85.05112877980659
-      ],
-      "srs-name": "900913"
-    },
-    "osm2pgsql": {
-      "geometry_field": "way",
-      "type": "postgis",
-      "dbname": "gis",
-      "extent": "-20037508,-20037508,20037508,20037508",
-      "key_field": ""
-    },
-    "extents84": {
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "extent": [
-        -180,
-        -85.05112877980659,
-        180,
-        85.05112877980659
-      ],
-      "srs-name": "WGS84"
-    }
-  },
   "metatile": 2,
-  "bounds": [
-    -180,
-    -85.05112877980659,
-    180,
-    85.05112877980659
-  ],
   "name": "OpenStreetMap Carto",
-  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-  "Stylesheet": [
-    "style.mss",
-    "shapefiles.mss",
-    "landcover.mss",
-    "water.mss",
-    "water-features.mss",
-    "roads.mss",
-    "power.mss",
-    "citywalls.mss",
-    "placenames.mss",
-    "buildings.mss",
-    "stations.mss",
-    "amenity-points.mss",
-    "ferry-routes.mss",
-    "aerialways.mss",
-    "admin.mss",
-    "addressing.mss"
-  ],
-  "minzoom": 0,
-  "maxzoom": 22,
   "description": "A faithful reimplementation of the standard OpenStreetMap style"
 }
