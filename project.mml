@@ -1061,6 +1061,32 @@
       "advanced": {}
     },
     {
+      "geometry": "linestring",
+      "extent": [
+        72.51277096649953,
+        27.717572966869284,
+        97.34594798069979,
+        37.084106989378974
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "planet_osm_line",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "8072084.74,3213412.64,10836501.36,4450836.71",
+        "host": "localhost",
+        "port": "5432",
+        "dbname": "india_boundaries"
+      },
+      "id": "india-admin-claim",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "india-admin-claim"
+    },
+    {
       "name": "admin-low-zoom",
       "srs-name": "900913",
       "geometry": "linestring",
@@ -2025,32 +2051,6 @@
         "minzoom": 14
       },
       "advanced": {}
-    },
-    {
-      "geometry": "linestring",
-      "extent": [
-        72.51277096649953,
-        27.717572966869284,
-        97.34594798069979,
-        37.084106989378974
-      ],
-      "Datasource": {
-        "type": "postgis",
-        "table": "planet_osm_line",
-        "key_field": "",
-        "geometry_field": "",
-        "extent_cache": "auto",
-        "extent": "8072084.74,3213412.64,10836501.36,4450836.71",
-        "host": "localhost",
-        "port": "5432",
-        "dbname": "india_boundaries"
-      },
-      "id": "india-claimed-boundaries",
-      "class": "",
-      "srs-name": "900913",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "advanced": {},
-      "name": "india-claimed-boundaries"
     }
   ],
   "scale": 1,

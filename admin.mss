@@ -8,7 +8,7 @@ overlapping borders correctly.
 
 #admin-low-zoom[zoom < 11],
 #admin-mid-zoom[zoom >= 11][zoom < 13],
-#admin-high-zoom[zoom >= 13],#india-claimed-boundaries {
+#admin-high-zoom[zoom >= 13],#india-admin-claim {
   [admin_level = '2'],
   [admin_level = '3'] {
     [zoom >= 4] {
